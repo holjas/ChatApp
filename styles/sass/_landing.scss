@@ -56,22 +56,22 @@ body {
 }
 // landing page right side of screen
 .mainLeft {
+  z-index: 10;
+  @include displayFlexRow();
+
   width: 50%;
   height: 100%;
   position: relative;
 }
-.mainLeft p {
-  z-index: 10;
-}
+
 .backgroundShape {
   z-index: -1;
   position: absolute;
   top: 0;
-  left: -150px;
+  left: -350px;
   width: 700px;
   height: 700px;
   background-image: linear-gradient(-160deg, $gradientMagenta, $gradientViolet);
-  //   shape-outside: circle();
   border-radius: 48%;
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;
@@ -86,11 +86,12 @@ body {
 }
 .mainRight h2 {
   @include rubikRegular();
-  font-size: 2.5rem;
+  font-size: 3rem;
   width: 63%;
   text-align: left;
+  letter-spacing: 1.15px;
   color: $primary5;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .mainRight p {
   @include rubikLight();
