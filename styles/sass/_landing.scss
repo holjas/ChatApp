@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+// general styling variables
+$fontMain: "Rubik", sans-serif;
+
+$primary1: hsl(276, 100%, 81%);
+$primary2: hsl(276, 55%, 52%);
+$primary3: hsl(271, 15%, 43%);
+$primary4: hsl(206, 6%, 79%);
+$primary5: hsl(271, 36%, 24%);
+$primary6: hsl(270, 7%, 64%);
+$secondary1: hsl(0, 0%, 100%);
+$secondary2: hsl(270, 20%, 96%);
+$secondary3: hsl(271, 36%, 24%);
+$secondary4: hsl(289, 100%, 72%);
+
+$gradientMagenta: hsl(293, 100%, 63%);
+$gradientViolet: hsl(264, 100%, 61%);
+
+@mixin rubikLight {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+@mixin rubikRegular {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+@mixin rubikBold {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+@mixin displayFlexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin displayFlexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: $secondary2;
+}
+.mainContainer {
+  @include displayFlexRow();
+  height: 100vh;
+}
+.mainLeft {
+  @include displayFlexCol();
+  width: 50%;
+  background-color: red;
+}
+
+// landing page right side of screen
+.mainRight {
+  @include displayFlexCol();
+  align-items: flex-start;
+  width: 50%;
+  padding-left: 10px;
+}
+.mainRight h2 {
+  @include rubikRegular();
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: left;
+  color: $primary5;
+  padding-bottom: 20px;
+}
+.mainRight p {
+  @include rubikLight();
+  width: 60%;
+  color: $primary6;
+}
