@@ -9,6 +9,7 @@ $primary3: hsl(271, 15%, 43%);
 $primary4: hsl(206, 6%, 79%);
 $primary5: hsl(271, 36%, 24%);
 $primary6: hsl(270, 7%, 64%);
+$primary7: hsl(275, 39%, 88%);
 $secondary1: hsl(0, 0%, 100%);
 $secondary2: hsl(270, 20%, 96%);
 $secondary3: hsl(271, 36%, 24%);
@@ -41,6 +42,19 @@ $gradientViolet: hsl(264, 100%, 61%);
   justify-content: center;
   align-items: center;
 }
+@mixin phoneText {
+  @include rubikLight;
+  font-size: 14px;
+  text-align: left;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+}
+@mixin phoneTextShadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.03),
+    0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
+    0 16px 32px rgba(0, 0, 0, 0.03);
+}
 .wrapper {
   max-width: 1440px;
   width: 100%;
@@ -70,8 +84,12 @@ body {
   top: 0;
   left: -350px;
   width: 700px;
-  height: 700px;
-  background-image: linear-gradient(-160deg, $gradientMagenta, $gradientViolet);
+  height: 850px;
+  background-image: linear-gradient(
+    -160deg,
+    $gradientMagenta 10%,
+    $gradientViolet
+  );
   border-radius: 48%;
   border-top-left-radius: 0%;
   border-top-right-radius: 0%;

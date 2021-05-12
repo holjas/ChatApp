@@ -33,8 +33,8 @@
 }
 
 .marvel-device.iphone-x {
-  width: 300px;
-  height: 600px;
+  width: 370px;
+  height: 700px;
   padding: 12px;
   background: #fdfdfd;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
@@ -46,42 +46,6 @@
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   border-radius: 66px;
 }
-/* .marvel-device.iphone-x .overflow {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 66px;
-    overflow: hidden;
-  } */
-/* .marvel-device.iphone-x .shadow {
-    border-radius: 100%;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    background: radial-gradient(
-      ellipse at center,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(255, 255, 255, 0) 60%
-    );
-  } */
-/* .marvel-device.iphone-x .shadow--tl {
-    top: -20px;
-    left: -20px;
-  }
-  .marvel-device.iphone-x .shadow--tr {
-    top: -20px;
-    right: -20px;
-  }
-  .marvel-device.iphone-x .shadow--bl {
-    bottom: -20px;
-    left: -20px;
-  }
-  .marvel-device.iphone-x .shadow--br {
-    bottom: -20px;
-    right: -20px;
-  } */
 .marvel-device.iphone-x:before {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
@@ -122,40 +86,7 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.marvel-device.iphone-x .top-bar,
-.marvel-device.iphone-x .bottom-bar {
-  width: 100%;
-  position: absolute;
-  height: 8px;
-  background: transparent;
-  left: 0;
-}
-.marvel-device.iphone-x .top-bar {
-  top: 80px;
-}
-.marvel-device.iphone-x .bottom-bar {
-  bottom: 80px;
-}
 
-.marvel-device.iphone-x .camera {
-  width: 6px;
-  height: 6px;
-  top: 9px;
-  border-radius: 100%;
-  position: absolute;
-  left: 154px;
-  background: #0d4d71;
-}
-.marvel-device.iphone-x .speaker {
-  height: 6px;
-  width: 60px;
-  left: 50%;
-  position: absolute;
-  top: 9px;
-  margin-left: -30px;
-  background: #171818;
-  border-radius: 6px;
-}
 .marvel-device.iphone-x .notch {
   position: absolute;
   width: 210px;
@@ -175,23 +106,3 @@
   top: 0;
   width: 8px;
 }
-/* .marvel-device.iphone-x .notch:after {
-    background: radial-gradient(
-      circle at bottom left,
-      transparent 0,
-      transparent 70%,
-      black 70%,
-      black 100%
-    );
-    left: -8px;
-  } */
-/* .marvel-device.iphone-x .notch:before {
-    background: radial-gradient(
-      circle at bottom right,
-      transparent 0,
-      transparent 70%,
-      black 70%,
-      black 100%
-    );
-    right: -8px;
-  } */

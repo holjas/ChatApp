@@ -13,7 +13,11 @@
     />
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/style.css" />
-
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/ca2de226c8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Chat App</title>
   </head>
   <body>
@@ -23,13 +27,7 @@
         <div class="backgroundShape"></div>
         <!-- phone chat window start -->
         <div class="marvel-device iphone-x">
-          <div class="notch">
-            <div class="camera"></div>
-            <div class="speaker"></div>
-          </div>
-          <div class="top-bar"></div>
-
-          <div class="bottom-bar"></div>
+          <div class="notch"></div>
 
           <div class="overflow">
             <div class="shadow shadow--tr"></div>
@@ -41,16 +39,61 @@
           <div class="screen">
             <!--  PHONE Content Start-->
             <div class="phoneGridContainer">
-              <div class="phoneUser">user</div>
-              <div class="phoneText1">one</div>
-              <div class="phoneText2">two</div>
-              <div class="phoneText3">three</div>
-              <div class="phoneText4">four</div>
-              <div class="phoneText5">five</div>
-              <div class="phoneText6">six</div>
-              <div class="phoneText7">seven</div>
-              <div class="phoneText8">eight</div>
-              <div class="phoneSend">send</div>
+              <!-- phone user start -->
+              <div class="phoneUser">
+                <div class="phoneUserMain">
+                  <i class="fas fa-chevron-left"></i>
+                  <div class="phoneUserImageContainer">
+                    <img src="./images/avatar.jpg" alt="user profile image" />
+                  </div>
+                  <div class="phoneUserInformation">
+                    <p>Samuel Green</p>
+                    <p>Available to Walk</p>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <!-- phone user end -->
+              <div class="phoneText1 phoneTextCompany">
+                That sounds great. I'd be happy to discuss more.
+              </div>
+              <div class="phoneText2 phoneTextCompany">
+                Could you send over some pictures of your dog, please?
+              </div>
+              <div class="phoneText3 phoneTextUser">
+                <div class="phoneUserDogImage">
+                  <img
+                    src="./images/dog-image-1.jpg"
+                    alt="duck toller retriever"
+                  />
+                </div>
+                <div class="phoneUserDogImage">
+                  <img
+                    src="./images/dog-image-2.jpg"
+                    alt="duck toller retriever"
+                  />
+                </div>
+                <div class="phoneUserDogImage">
+                  <img
+                    src="./images/dog-image-3.jpg"
+                    alt="duck toller retriever"
+                  />
+                </div>
+              </div>
+              <div class="phoneText4 phoneTextUser">
+                Here are a few pictures. She's a happy girl!
+              </div>
+              <div class="phoneText5 phoneTextUser">Can you make it?</div>
+              <div class="phoneText6 phoneTextCompany">
+                She looks so happy! The time we discussed works. How longshall I
+                take her out for?
+              </div>
+              <div class="phoneText7 phoneTextCompany">seven</div>
+              <div class="phoneText8 phoneTextCompany">eight</div>
+              <div class="phoneSend">
+                Type a message...
+                <i class="fas fa-chevron-circle-right"></i>
+              </div>
               <div class="phoneContainer"></div>
             </div>
             <!--  PHONE Content End-->
