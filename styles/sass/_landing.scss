@@ -81,7 +81,8 @@ body {
 .mainLeft {
   z-index: 10;
   @include displayFlexRow();
-
+  justify-content: flex-end;
+  padding-right: 140px;
   width: 50%;
   height: 100%;
   position: relative;
