@@ -117,7 +117,7 @@ body {
 .backgroundShapeLight {
   z-index: -1;
   position: absolute;
-  top: 0;
+  top: -300px;
   left: 350px;
   width: 700px;
   height: 850px;
@@ -139,5 +139,5 @@ body {
 .mainRight p {
   @include rubikLight();
   width: 63%;
-  color: $primary6;
+  color: $primary4;
 }
