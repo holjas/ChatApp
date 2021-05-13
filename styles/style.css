@@ -351,7 +351,7 @@ body {
   position: relative;
 }
 
-.backgroundShape {
+.backgroundShapeDark {
   z-index: -1;
   position: absolute;
   top: 0;
@@ -365,6 +365,7 @@ body {
 }
 
 .mainRight {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,6 +384,21 @@ body {
           align-items: flex-start;
   width: 50%;
   padding-left: 10px;
+  position: relative;
+}
+
+.backgroundShapeLight {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 350px;
+  width: 700px;
+  height: 850px;
+  background-color: #f5f3f7;
+  border-radius: 48%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  overflow: hidden;
 }
 
 .mainRight h2 {
