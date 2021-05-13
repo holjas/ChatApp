@@ -14,6 +14,7 @@ $secondary1: hsl(0, 0%, 100%);
 $secondary2: hsl(270, 20%, 96%);
 $secondary3: hsl(271, 36%, 24%);
 $secondary4: hsl(289, 100%, 72%);
+$secondary5: hsl(270, 43%, 94%);
 
 $gradientMagenta: hsl(293, 100%, 63%);
 $gradientViolet: hsl(264, 100%, 61%);
@@ -121,7 +122,7 @@ body {
   left: 350px;
   width: 700px;
   height: 850px;
-  background-color: $secondary2;
+  background-color: $secondary5;
   border-radius: 48%;
   border-bottom-left-radius: 0%;
   border-bottom-right-radius: 0%;
