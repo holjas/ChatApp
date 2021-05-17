@@ -832,6 +832,9 @@ body {
 }
 
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden !important;
+  }
   .mainContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -839,6 +842,8 @@ body {
             flex-direction: column;
     height: auto;
     overflow-y: hidden;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
   .mainLeft,
   .mainRight {
@@ -867,11 +872,15 @@ body {
 }
 
 @media (max-width: 460px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .mainLeft {
     padding: 20px 10px;
   }
   .marvel-device {
-    min-width: 280px;
+    min-width: 260px;
   }
   .marvel-device.iphone-x .notch {
     position: absolute;
@@ -884,7 +893,7 @@ body {
     padding: 25px 15px 10px;
   }
   .chatWrapper {
-    width: 280px;
+    width: 260px;
   }
   .priceGradient,
   .message-text {
