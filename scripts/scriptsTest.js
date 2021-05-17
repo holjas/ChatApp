@@ -1,3 +1,5 @@
+//chat animation adapted from Clemens
+// https://codepen.io/clemens/pen/kXZWOK
 const chatMessages = [
   {
     name: "ms1",
@@ -17,9 +19,9 @@ const chatMessages = [
     name: "ms3",
     msg: `
     <div class="phoneUserDogImage">
-    <img src="../images/dog-image-1.jpg" class="phoneUserDogImage"/>
-    <img src="../images/dog-image-2.jpg" class="phoneUserDogImage"/>
-    <img src="../images/dog-image-3.jpg" class="phoneUserDogImage"/>
+    <img src="./images/dog-image-1.jpg" class="phoneUserDogImage"/>
+    <img src="./images/dog-image-2.jpg" class="phoneUserDogImage"/>
+    <img src="./images/dog-image-3.jpg" class="phoneUserDogImage"/>
     </div>
     `,
     delay: 5000,

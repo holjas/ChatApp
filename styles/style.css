@@ -806,3 +806,12 @@ body {
     transform: scale(1);
   }
 }
+
+@media (max-width: 1000px) {
+  .mainLeft {
+    width: 60%;
+  }
+  .mainRight {
+    width: 40%;
+  }
+}
