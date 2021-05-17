@@ -36,7 +36,7 @@
   .mainLeft,
   .mainRight {
     padding: 20px;
-    width: 80%;
+    width: 100%;
     margin-top: 20px;
   }
   .mainRight h2,
@@ -56,5 +56,31 @@
   }
   .backgroundShapeDark {
     top: -170px;
+  }
+}
+@media (max-width: 460px) {
+  .mainLeft {
+    padding: 20px 10px;
+  }
+  .marvel-device {
+    min-width: 280px;
+  }
+  .marvel-device.iphone-x .notch {
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    top: 10px;
+    left: 20%;
+  }
+  .phoneUser {
+    padding: 25px 15px 10px;
+  }
+  .chatWrapper {
+    width: 280px;
+  }
+  .priceGradient,
+  .message-text {
+    max-width: 95%;
+    width: 95%;
   }
 }
