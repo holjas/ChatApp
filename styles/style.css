@@ -872,10 +872,6 @@ body {
 }
 
 @media (max-width: 460px) {
-  html {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
   .mainLeft {
     padding: 20px 10px;
   }
