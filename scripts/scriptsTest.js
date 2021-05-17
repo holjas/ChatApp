@@ -1,59 +1,88 @@
-console.log("testing");
 const chatMessages = [
   {
-    name: "ms2",
+    name: "ms1",
     msg: "That sounds great. I'd be happy with that.",
-    delay: 0,
+    delay: 5000,
     align: "left",
+    style: "message-text",
+  },
+  {
+    name: "ms2",
+    msg: "Could you send over some pictures of your dog, please?",
+    delay: 2000,
+    align: "left",
+    style: "message-text",
   },
   {
     name: "ms3",
-    msg: "Could you send over some pictures of your dog, please?",
-    delay: 3000,
-    align: "left",
+    msg: `
+    <div class="phoneUserDogImage">
+    <img src="../images/dog-image-1.jpg" class="phoneUserDogImage"/>
+    <img src="../images/dog-image-2.jpg" class="phoneUserDogImage"/>
+    <img src="../images/dog-image-3.jpg" class="phoneUserDogImage"/>
+    </div>
+    `,
+    delay: 5000,
+    align: "right",
+    style: "message-text",
   },
   {
     name: "ms4",
-    msg: "IMAGES HEREE",
-    delay: 7000,
+    msg: "Here are a few pictures. She's a happy girl!",
+    delay: 2000,
     align: "right",
+    style: "message-text",
   },
   {
     name: "ms5",
-    msg: "Here are a few pictures. She's a happy girl!",
-    delay: 3000,
+    msg: "Can you make it?",
+    delay: 1500,
     align: "right",
+    style: "message-text",
   },
   {
     name: "ms6",
-    msg: "Can you make it?",
-    delay: 11000,
-    align: "right",
+    msg: "She looks so happy! The time we discussed works. How long shall I take her out for?",
+    delay: 3000,
+    align: "left",
+    style: "message-text",
   },
   {
     name: "ms7",
-    msg: "She looks so happy! The time we discussed works. How long shall I take her out for?",
-    delay: 10000,
+    msg: `
+    <div>
+    <i class="far fa-circle"></i>
+    <p>30 minute walk</p>
+    </div>
+    <div>
+    <p>$29</p>
+    </div>
+    `,
+    delay: 3000,
     align: "left",
+    style: "priceGradient",
   },
   {
     name: "ms8",
-    msg: "PRICE ONE",
-    delay: 10000,
+    msg: `
+    <div>
+    <i class="far fa-circle"></i>
+    <p>1 hour walk</p>
+    </div>
+    <div>
+    <p>$49</p>
+    </div>
+    `,
+    delay: 1500,
     align: "left",
-  },
-  {
-    name: "ms9",
-    msg: "Price",
-    delay: 10000,
-    align: "left",
+    style: "priceGradient",
   },
 ];
-var chatDelay = 0;
+let chatDelay = 0;
 
 function onRowAdded() {
-  $(".chat-container").animate({
-    scrollTop: $(".chat-container").prop("scrollHeight"),
+  $(".chatContainer").animate({
+    scrollTop: $(".chatContainer").prop("scrollHeight"),
   });
 }
 $.each(chatMessages, function (index, obj) {
@@ -65,10 +94,8 @@ $.each(chatMessages, function (index, obj) {
   msgname = "." + obj.name;
   msginner = ".messageinner-" + obj.name;
   spinner = ".sp-" + obj.name;
-  //   if (obj.showTime == true) {
-  //     chatTimeString = "<span class='message-time'>" + obj.time + "</span>";
-  //   }
-  $(".chat-message-list").append(
+
+  $(".chatMessageList").append(
     "<li class='message-" +
       obj.align +
       " " +
@@ -79,7 +106,10 @@ $.each(chatMessages, function (index, obj) {
       obj.align +
       "'><div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div></span></div><div class='messageinner-" +
       obj.name +
-      "' hidden><span class='message-text'>" +
+      //   "' hidden><span class='message-text'>" +
+      "' hidden><span class='" +
+      obj.style +
+      "'>" +
       obj.msg +
       "</span>" +
       //   chatTimeString +

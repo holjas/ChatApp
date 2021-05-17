@@ -565,10 +565,87 @@ body {
   font-size: 1rem;
 }
 
+.phoneUserDogImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .phoneUserDogImage img {
   border-radius: 10px;
   width: 58px;
-  margin-left: 15px;
+}
+
+.phoneUserDogImage img:nth-child(2) {
+  margin: 0 15px;
+}
+
+.priceGradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(160deg, #e942ff 10%, #8838ff);
+  color: white;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 5px;
+}
+
+.priceGradient > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.priceGradient > div p:nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-left: 3.5rem;
+}
+
+.priceGradient i {
+  color: #d89eff;
+  font-size: 1.1rem;
+  padding-right: 10px;
 }
 
 .phoneSend {
@@ -617,24 +694,6 @@ body {
   list-style: none;
 }
 
-.message-left .message-time {
-  display: block;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 30px;
-  padding-top: 4px;
-  font-family: Courier;
-}
-
-.message-right .message-time {
-  display: block;
-  font-size: 12px;
-  text-align: right;
-  padding-right: 20px;
-  padding-top: 4px;
-  font-family: Courier;
-}
-
 .message-left {
   text-align: left;
   margin-bottom: 16px;
@@ -669,12 +728,10 @@ body {
 }
 
 .chat {
-  border-radius: 30px;
   padding: 10px;
-  background: #f5f7fa;
 }
 
-.chat-container {
+.chatContainer {
   height: 550px;
   overflow-y: scroll;
 }

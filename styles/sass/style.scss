@@ -16,24 +16,6 @@
   list-style: none;
 }
 
-.message-left .message-time {
-  display: block;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 30px;
-  padding-top: 4px;
-  font-family: Courier;
-}
-
-.message-right .message-time {
-  display: block;
-  font-size: 12px;
-  text-align: right;
-  padding-right: 20px;
-  padding-top: 4px;
-  font-family: Courier;
-}
-
 .message-left {
   text-align: left;
   margin-bottom: 16px;
@@ -47,16 +29,9 @@
   line-height: 1.5em;
 }
 .message-left .message-text {
-  //   max-width: 80%;
-  //   display: inline-block;
   background: $secondary6;
-  //   padding: 10px;
-  //   font-size: 14px;
   color: $primary2;
-  //   border-radius: 15px;
   border-bottom-left-radius: 5px;
-  //   font-weight: 100;
-  //   line-height: 1.5em;
 }
 
 .message-right {
@@ -66,28 +41,19 @@
 
 .message-right .message-text {
   line-height: 1.5em;
-  //   display: inline-block;
   background: $secondary1;
-  //   padding: 10px;
-  //   font-size: 14px;
   color: $primary3;
-  //   border-radius: 15px;
   border-bottom-right-radius: 5px;
-  //   line-height: 1.5em;
-  //   font-weight: 100;
   text-align: left;
 }
 
 .chat {
-  border-radius: 30px;
   padding: 10px;
-  background: #f5f7fa;
 }
 
-.chat-container {
+.chatContainer {
   height: 550px;
   overflow-y: scroll;
-  //   padding-right: 16px;
 }
 
 .spinme-right {

@@ -30,11 +30,42 @@
   @include rubikBold;
   font-size: 1rem;
 }
+.phoneUserDogImage {
+  @include displayFlexRow;
+}
 .phoneUserDogImage img {
   border-radius: 10px;
   width: 58px;
-  margin-left: 15px;
 }
+.phoneUserDogImage img:nth-child(2) {
+  margin: 0 15px;
+}
+.priceGradient {
+  @include displayFlexRow;
+  @include phoneTextGradient;
+  width: 80%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 5px;
+}
+
+.priceGradient > div:nth-child(1) {
+  @include displayFlexRow;
+  justify-content: flex-start;
+  width: 100%;
+}
+.priceGradient > div p:nth-child(1) {
+  @include rubikBold;
+  font-size: 1.3rem;
+  margin-left: 3.5rem;
+}
+.priceGradient i {
+  color: $primary1;
+  font-size: 1.1rem;
+  padding-right: 10px;
+}
+
 .phoneSend {
   @include displayFlexRow;
   @include rubikLight;
