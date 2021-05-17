@@ -7,7 +7,6 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body {
@@ -807,11 +806,62 @@ body {
   }
 }
 
+@media (max-width: 1160px) {
+  .mainRight p,
+  .mainRight h2 {
+    width: 80%;
+  }
+}
+
 @media (max-width: 1000px) {
   .mainLeft {
     width: 60%;
+    padding-right: 80px;
   }
   .mainRight {
     width: 40%;
+  }
+  .mainRight h2,
+  .mainRight p {
+    width: 90%;
+  }
+  .backgroundShapeLight {
+    top: -200px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    overflow-y: hidden;
+  }
+  .mainLeft,
+  .mainRight {
+    padding: 20px;
+    width: 80%;
+    margin-top: 20px;
+  }
+  .mainRight h2,
+  .mainRight p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .mainRight {
+    padding-bottom: 200px;
+  }
+  .marvel-device {
+    margin: 0 auto;
+  }
+  .backgroundShapeLight {
+    top: 0px;
+    left: 360px;
+  }
+  .backgroundShapeDark {
+    top: -170px;
   }
 }
