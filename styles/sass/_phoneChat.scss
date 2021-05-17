@@ -1,12 +1,9 @@
-.phoneGridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px repeat(6, min-content) repeat(2, 45px) 190px;
-  gap: 13px 0px;
+.screen {
+  @include rubikLight;
+  font-size: 0.8rem;
 }
 // phone user start
 .phoneUser {
-  grid-area: 1 / 1 / 2 / 3;
   @include displayFlexRow;
   justify-content: space-between;
   padding: 30px 15px 10px;
@@ -29,98 +26,20 @@
   border-radius: 50%;
   border: 2px solid $secondary1;
 }
-
 .phoneUserInformation p:first-child {
   @include rubikBold;
-}
-.phoneUserInformation p:last-child {
-  @include rubikLight;
-  font-size: 14px;
-}
-.phoneTextCompany {
-  @include phoneText;
-  background-color: $primary7;
-  color: $primary2;
-  margin-left: 15px;
-  border-bottom-left-radius: 2px;
-}
-.phoneTextUser {
-  @include phoneText;
-  justify-self: end;
-  background-color: $secondary2;
-  color: $primary3;
-  margin-right: 15px;
-  border-bottom-right-radius: 2px;
-}
-// phone user end
-.phoneText1 {
-  grid-area: 2 / 1 / 3 / 3;
-}
-
-.phoneText2 {
-  grid-area: 3 / 1 / 4 / 3;
-}
-
-.phoneText3 {
-  grid-area: 4 / 1 / 5 / 3;
-  @include displayFlexRow;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0;
-  background-color: transparent;
+  font-size: 1rem;
 }
 .phoneUserDogImage img {
   border-radius: 10px;
   width: 58px;
   margin-left: 15px;
 }
-
-.phoneText4 {
-  grid-area: 5 / 1 / 6 / 3;
-  @include phoneTextShadow;
-}
-
-.phoneText5 {
-  grid-area: 6 / 1 / 7 / 3;
-  @include phoneTextShadow;
-}
-
-.phoneText6 {
-  grid-area: 7 / 1 / 8 / 3;
-}
-
-.phoneText7 {
-  grid-area: 8 / 1 / 9 / 3;
-  @include displayFlexRow;
-  @include phoneTextGradient;
-  justify-content: space-between;
-}
-.phoneText7 > div,
-.phoneText8 > div {
-  @include displayFlexRow;
-}
-.phoneText7 i,
-.phoneText8 i {
-  color: $primary1;
-  font-size: 1.1rem;
-  padding-right: 10px;
-}
-.phoneText7 > div p:nth-child(1),
-.phoneText8 > div p:nth-child(1) {
-  @include rubikBold;
-  padding-right: 15px;
-  font-size: 1.2rem;
-}
-.phoneText8 {
-  grid-area: 9 / 1 / 10 / 3;
-  @include displayFlexRow;
-  @include phoneTextGradient;
-  justify-content: space-between;
-}
-
 .phoneSend {
-  grid-area: 10 / 1 / 11 / 3;
   @include displayFlexRow;
+  @include rubikLight;
+  margin: 0 auto;
+  font-size: 14px;
   justify-content: space-between;
   justify-self: center;
   width: 93%;
@@ -134,11 +53,3 @@
   font-size: 2rem;
   color: $secondary3;
 }
-
-.phoneContainer {
-  grid-area: 1 / 1 / 11 / 3;
-}
-
-//
-//
-//

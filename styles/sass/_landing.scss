@@ -6,7 +6,7 @@ $fontMain: "Rubik", sans-serif;
 $primary1: hsl(276, 100%, 81%);
 $primary2: hsl(276, 55%, 52%);
 $primary3: hsl(271, 15%, 43%);
-$primary4: hsl(206, 6%, 79%);
+$primary4: hsl(206, 6%, 55%);
 $primary5: hsl(271, 36%, 24%);
 $primary6: hsl(270, 7%, 64%);
 $primary7: hsl(275, 39%, 88%);
@@ -14,7 +14,8 @@ $secondary1: hsl(0, 0%, 100%);
 $secondary2: hsl(270, 20%, 96%);
 $secondary3: hsl(271, 36%, 24%);
 $secondary4: hsl(289, 100%, 72%);
-$secondary5: hsl(270, 43%, 94%);
+$secondary5: hsl(270, 13%, 94%);
+$secondary6: hsl(289, 100%, 97%);
 
 $gradientMagenta: hsl(293, 100%, 63%);
 $gradientViolet: hsl(264, 100%, 61%);
@@ -77,6 +78,21 @@ body {
 .mainContainer {
   @include displayFlexRow();
   height: 100vh;
+}
+.displayHidden {
+  display: none;
+}
+.speechBubble1,
+.speechBubble2,
+.speechBubble3 {
+  font-size: 0.7rem;
+  padding-right: 0.15rem;
+}
+.speechBubble2 {
+  opacity: 0.6;
+}
+.speechBubble3 {
+  opacity: 0.2;
 }
 // landing page right side of screen
 .mainLeft {
