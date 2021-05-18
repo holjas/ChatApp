@@ -102,7 +102,7 @@
 
 .message-left {
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 .message-text {
   max-width: 80%;
@@ -111,6 +111,7 @@
   font-size: 14px;
   border-radius: 15px;
   line-height: 1.5em;
+  width: max-content;
 }
 .message-left .message-text {
   background: $secondary6;
@@ -120,7 +121,7 @@
 
 .message-right {
   text-align: right;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .message-right .message-text {
@@ -132,11 +133,9 @@
 }
 
 .chat {
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
-
 .chatContainer {
-  height: 550px;
   overflow-y: scroll;
 }
 

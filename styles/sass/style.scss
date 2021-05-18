@@ -20,7 +20,7 @@
   }
   .mainRight h2,
   .mainRight p {
-    width: 90%;
+    width: 100%;
   }
   .backgroundShapeLight {
     top: -200px;
@@ -34,9 +34,6 @@
   .mainContainer {
     flex-direction: column;
     height: auto;
-    overflow-y: hidden;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
   }
   .mainLeft,
   .mainRight {
@@ -60,32 +57,41 @@
     left: 360px;
   }
   .backgroundShapeDark {
-    top: -170px;
+    top: -270px;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .mainLeft {
     padding: 20px 10px;
   }
-  .marvel-device {
-    min-width: 260px;
+  .backgroundShapeDark {
+    top: -270px;
+    left: -500px;
+  }
+  .marvel-device.iphone-x,
+  .marvel-device.iphone-x {
+    width: 90%;
+    min-width: 90%;
   }
   .marvel-device.iphone-x .notch {
     position: absolute;
     width: 180px;
     height: 20px;
     top: 10px;
-    left: 20%;
   }
   .phoneUser {
     padding: 25px 15px 10px;
   }
-  .chatWrapper {
-    width: 260px;
+  .chatWrapper,
+  .chat {
+    width: 100%;
   }
   .priceGradient,
   .message-text {
     max-width: 95%;
     width: 95%;
+  }
+  .phoneUserDogImage {
+    justify-content: space-around;
   }
 }

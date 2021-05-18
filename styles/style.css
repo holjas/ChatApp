@@ -281,6 +281,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  overflow-y: hidden;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 .displayHidden {
@@ -368,7 +371,7 @@ body {
   top: -300px;
   left: 350px;
   width: 700px;
-  height: 850px;
+  height: 950px;
   background-color: #f0eef2;
   border-radius: 48%;
   border-bottom-left-radius: 0%;
@@ -384,6 +387,7 @@ body {
   text-align: left;
   letter-spacing: 1.15px;
   color: #3e2753;
+  padding-right: 20px;
   padding-bottom: 25px;
 }
 
@@ -392,6 +396,7 @@ body {
   font-weight: 400;
   width: 63%;
   color: #858d93;
+  padding-right: 20px;
 }
 
 .marvel-device {
@@ -695,7 +700,7 @@ body {
 
 .message-left {
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .message-text {
@@ -705,6 +710,9 @@ body {
   font-size: 14px;
   border-radius: 15px;
   line-height: 1.5em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .message-left .message-text {
@@ -715,7 +723,7 @@ body {
 
 .message-right {
   text-align: right;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .message-right .message-text {
@@ -727,11 +735,10 @@ body {
 }
 
 .chat {
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .chatContainer {
-  height: 550px;
   overflow-y: scroll;
 }
 
@@ -823,7 +830,7 @@ body {
   }
   .mainRight h2,
   .mainRight p {
-    width: 90%;
+    width: 100%;
   }
   .backgroundShapeLight {
     top: -200px;
@@ -841,9 +848,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    overflow-y: hidden;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
   }
   .mainLeft,
   .mainRight {
@@ -867,33 +871,43 @@ body {
     left: 360px;
   }
   .backgroundShapeDark {
-    top: -170px;
+    top: -270px;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .mainLeft {
     padding: 20px 10px;
   }
-  .marvel-device {
-    min-width: 260px;
+  .backgroundShapeDark {
+    top: -270px;
+    left: -500px;
+  }
+  .marvel-device.iphone-x,
+  .marvel-device.iphone-x {
+    width: 90%;
+    min-width: 90%;
   }
   .marvel-device.iphone-x .notch {
     position: absolute;
     width: 180px;
     height: 20px;
     top: 10px;
-    left: 20%;
   }
   .phoneUser {
     padding: 25px 15px 10px;
   }
-  .chatWrapper {
-    width: 260px;
+  .chatWrapper,
+  .chat {
+    width: 100%;
   }
   .priceGradient,
   .message-text {
     max-width: 95%;
     width: 95%;
+  }
+  .phoneUserDogImage {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
