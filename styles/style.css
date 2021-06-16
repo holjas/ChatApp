@@ -738,10 +738,6 @@ body {
   padding: 20px 10px 10px 10px;
 }
 
-.chatContainer {
-  overflow-y: scroll;
-}
-
 .spinme-right {
   display: inline-block;
   padding: 15px 20px;
